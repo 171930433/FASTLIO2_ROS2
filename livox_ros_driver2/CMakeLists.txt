@@ -1,4 +1,5 @@
 # judge which cmake codes to use 
+set(ROS_EDITION "ROS2")
 if(ROS_EDITION STREQUAL "ROS1")
 
   # Copyright(c) 2019 livoxtech limited.
@@ -190,7 +191,7 @@ if(ROS_EDITION STREQUAL "ROS1")
 else(ROS_EDITION STREQUAL "ROS2")
 
   # Copyright(c) 2020 livoxtech limited.
-  set(Livox_SDK2_PATH ${CMAKE_CURRENT_LIST_DIR}/../../3rd)
+  set(Livox_SDK2_PATH ${CMAKE_CURRENT_LIST_DIR}/../../install/livox_sdk2)
 
   message(WARNING "!!!!!!!!!!!!!!!!!Livox_SDK2_PATH: ${Livox_SDK2_PATH}")
 

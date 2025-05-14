@@ -1,0 +1,14 @@
+# - Config file for the livox_sdk2 package
+# It defines the following variables
+#  livox_sdk2_INCLUDE_DIRS - include directories for FooBar
+#  livox_sdk2_LIBRARIES    - libraries to link against
+#  livox_sdk2_EXECUTABLE   - the bar executable
+
+set(livox_sdk2_INCLUDE_DIRS "@CONF_INCLUDE_DIRS@")
+
+# Our library dependencies (contains definitions for IMPORTED targets)
+include("${livox_sdk2_DIR}/export_livox_sdk2.cmake")
+
+# These are IMPORTED targets created by livox_sdk2Targets.cmake
+
+
