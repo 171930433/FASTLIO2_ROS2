@@ -18,39 +18,8 @@ gtsam
 livox_ros_driver2
 ```
 
-## 详细说明
-### 1.编译 LIVOX-SDK2
-```shell
-git clone https://github.com/Livox-SDK/Livox-SDK2.git
-cd ./Livox-SDK2/
-mkdir build
-cd build
-cmake .. && make -j
-sudo make install
-```
-
-### 2.编译 livox_ros_driver2
-```shell
-mkdir -r ws_livox/src
-git clone https://github.com/Livox-SDK/livox_ros_driver2.git ws_livox/src/livox_ros_driver2
-cd ws_livox/src/livox_ros_driver2
-source /opt/ros/humble/setup.sh
-./build.sh humble
-```
-
-### 3.编译 Sophus
-```shell
-git clone https://github.com/strasdat/Sophus.git
-cd Sophus
-git checkout 1.22.10
-mkdir build && cd build
-cmake .. -DSOPHUS_USE_BASIC_LOGGING=ON
-make
-sudo make install
-```
-
-**新的Sophus依赖fmt，可以在CMakeLists.txt中添加add_compile_definitions(SOPHUS_USE_BASIC_LOGGING)去除，否则会报错**
-
+## 详细说明 ubuntu2204 其余均未适配
+colcon build --symlink-install
 
 ## 实例数据集
 ```text
