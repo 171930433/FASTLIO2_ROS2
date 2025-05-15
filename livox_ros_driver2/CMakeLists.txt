@@ -191,7 +191,7 @@ if(ROS_EDITION STREQUAL "ROS1")
 else(ROS_EDITION STREQUAL "ROS2")
 
   # Copyright(c) 2020 livoxtech limited.
-  set(Livox_SDK2_PATH ${CMAKE_CURRENT_LIST_DIR}/../../install/livox_sdk2)
+  set(Livox_SDK2_PATH ${CMAKE_CURRENT_LIST_DIR}/../../../install/livox_sdk2)
 
   message(WARNING "!!!!!!!!!!!!!!!!!Livox_SDK2_PATH: ${Livox_SDK2_PATH}")
 

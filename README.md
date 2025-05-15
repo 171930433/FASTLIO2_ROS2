@@ -19,6 +19,9 @@ livox_ros_driver2
 ```
 
 ## 详细说明 ubuntu2204 其余均未适配
+
+sudo apt-get install ros-humble-gtsam  ros-humble-sophus
+
 colcon build --symlink-install
 
 ## 实例数据集
